@@ -9,6 +9,6 @@ export const ProductsProvider = ({children})=>{
   const [products, setproducts] = useState(PRODUCTS)
   const value = { products}
   return (
-    <ProductsProvider value={value} >{children}</ProductsProvider>
+    <ProductContext.Provider value={value} >{children}</ProductContext.Provider>
   )
 }
